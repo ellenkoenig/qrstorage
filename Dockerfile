@@ -26,7 +26,7 @@ ARG RUNNER_IMAGE="debian:${DEBIAN_VERSION}"
 FROM ${BUILDER_IMAGE} AS base
 
 # Install node
-ENV NODE_MAJOR=24
+ENV NODE_MAJOR=26
 
 RUN apt-get update && apt-get install -y ca-certificates curl gnupg
 RUN mkdir -p /etc/apt/keyrings  
